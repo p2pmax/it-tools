@@ -33,4 +33,3 @@ coverage
 /playwright/.cache/
 # Webkit with playwright creates a salt file
 salt
-src-tauri
