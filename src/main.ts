@@ -3,7 +3,9 @@ import { createPinia } from 'pinia';
 import { createHead } from '@vueuse/head';
 
 import { registerSW } from 'virtual:pwa-register';
+import Toast from 'vue-toastification';
 import { plausible } from './plugins/plausible.plugin';
+import 'vue-toastification/dist/index.css';
 
 import 'virtual:uno.css';
 
@@ -23,5 +25,6 @@ app.use(i18nPlugin);
 app.use(router);
 app.use(naive);
 app.use(plausible);
+app.use(Toast);
 
 app.mount('#app');
