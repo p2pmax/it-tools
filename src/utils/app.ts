@@ -7,6 +7,7 @@ interface Binary {
   platform: 'macos' | 'windows' | 'linux'
   arch: 'aarch64' | 'x86_64' | 'arm' | 'amd64'
   url: string
+  filename: string
   checksum: string
 }
 

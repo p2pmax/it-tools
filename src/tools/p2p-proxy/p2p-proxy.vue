@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import { useToast } from 'vue-toastification';
 import { invoke } from '@tauri-apps/api/core';
-import { useProxy } from '@/composable/proxy';
 import { type App, InstallationType, checkInstalled, install, installed } from '../../utils/app';
+import { useProxy } from '@/composable/proxy';
 
 const toast = useToast();
 
@@ -15,18 +15,21 @@ const app: App = {
     {
       platform: 'macos',
       arch: 'aarch64',
+      filename: '',
       url: 'https://github.com/p2pmax/libp2p-proxy/releases/download/0.0.1/libp2p-proxy-macos-aarch64.zip',
       checksum: 'ada59478f28973c45d97f99f04a9c27731836900f966540910efc5b9679b9f18',
     },
     {
       platform: 'macos',
       arch: 'x86_64',
+      filename: '',
       url: 'https://getsamplefiles.com/download/zip/sample-1.zip',
       checksum: 'ef7e47f0e35694a226b654d0c3a8e4ec1382028e8d50d67feddf24d2ab55cc24',
     },
     {
       platform: 'windows',
       arch: 'x86_64',
+      filename: '',
       url: 'https://getsamplefiles.com/download/zip/sample-1.zip',
       checksum: 'ef7e47f0e35694a226b654d0c3a8e4ec1382028e8d50d67feddf24d2ab55cc24',
     },
